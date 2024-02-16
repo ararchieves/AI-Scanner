@@ -2,7 +2,7 @@ import os
 
 import streamlit as st
 from utils.api import call_gemini_api
-from utils.preprocessing import generate_prompt, to_markdown
+from utils.preprocessing import generate_prompt
 import google.generativeai as genai
 
 from dotenv import load_dotenv
@@ -18,10 +18,10 @@ genai.configure(api_key=gemimi_api_key)
 # Streamlit application
 st.title("Smart Scanner AI")
 st.write("Enter text below and click 'Submit' to generate command: ")
-st.write("Example Useage: ```Ping google.com for 15 seconds.```")
+st.write("Example Useage: ```Continuous ping google.com```")
 
-text_input = st.text_area("Write Here:", placeholder="Ping google.com for 15 seconds.")
-submit_button = st.button("Submit")
+text_input = st.text_area("Write Here:", placeholder="Enter youe text here")
+submit_button = st.button("Generate")
 
 # Loading indicator and progress bar
 loading_icon = st.empty()

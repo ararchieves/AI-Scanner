@@ -1,5 +1,3 @@
-from IPython.display import Markdown
-import textwrap
 
 def generate_prompt(text):
     text = text.lower() 
@@ -14,7 +12,3 @@ Generate a ping command for the following task given in triple quotes, if the ta
 
     return prompt
 
-
-def to_markdown(text):
-  text = text.replace('•', '  *')
-  return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
