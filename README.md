@@ -2,7 +2,7 @@
 An Intelligent Network Vulnerability Scanner Tool
 
 
-## useage
+## Usage
 ```bash
 git clone https://github.com/ararchieves/Deep-Threat.git
 cd Deep-Threat
