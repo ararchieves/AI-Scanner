@@ -1,11 +1,11 @@
-# AI-Scanner
-Ai Scanner Application, generate and run commands assisted by AI.
+# Deep-Threat
+An Intelligent Network Vulnerability Scanner Tool
 
 
 ## useage
 ```bash
-git clone https://github.com/ararchieves/AI-Scanner.git
-cd AI-Scanner
+git clone https://github.com/ararchieves/Deep-Threat.git
+cd Deep-Threat
 
 pip install -r requirements.txt
 
