@@ -16,7 +16,9 @@ genai.configure(api_key=gemimi_api_key)
 # from transformers import pipeline
 
 # Streamlit application
-st.title("Smart Scanner AI")
+st.title("Deep Threat")
+# Tagline 
+st.subheader("An Intelligent Network Vulnerability Scanner Tool")
 st.write("Enter text below and click 'Submit' to generate command: ")
 st.write("Example Useage: ```Continuous ping google.com```")
 
@@ -45,5 +47,8 @@ if submit_button:
         # Display results
         progress_bar.empty()
         st.success("Processing complete!")
-        st.write(response.text)
+
+        # Write response text under result heading:
+        st.subheader("Result:")
+        st.write(f"{response.text}")
 
