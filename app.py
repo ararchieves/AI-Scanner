@@ -16,8 +16,6 @@ def main():
     st.session_state.setdefault('submit', False)
     st.session_state.setdefault('verify', False)
     st.session_state.setdefault('exec', False)
-    if 'command' not in st.session_state:
-        st.session_state['command'] = ''
 
     ## Input Section
     text_input, submit_button, warning_container = ui.input_section()
